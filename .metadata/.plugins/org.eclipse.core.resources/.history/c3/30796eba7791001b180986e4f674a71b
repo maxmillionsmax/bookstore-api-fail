@@ -1,0 +1,5 @@
+package com.max.bookstore.resources;
+
+public class CategoriaResource {
+
+}
