@@ -39,4 +39,5 @@
 <fullyQualifiedTypeName name="com.max.bookstore.repositories.LivroRepository"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
