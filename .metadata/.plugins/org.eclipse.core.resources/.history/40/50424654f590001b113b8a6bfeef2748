@@ -1,0 +1,11 @@
+package com.max.bookstore.domain;
+
+public class Livro {
+
+	private Integer id;
+	private String titulo;
+	private String nome_autor;
+	private String textoString;
+	
+	private Categoria categoria;
+}

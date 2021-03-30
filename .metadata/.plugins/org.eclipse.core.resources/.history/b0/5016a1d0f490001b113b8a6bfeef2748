@@ -1,0 +1,5 @@
+package com.max.bookstore.domain;
+
+public class Livro {
+
+}
