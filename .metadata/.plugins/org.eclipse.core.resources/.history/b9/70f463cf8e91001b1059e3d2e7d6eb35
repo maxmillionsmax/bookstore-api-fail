@@ -7,17 +7,15 @@ import org.springframework.stereotype.Service;
 
 import com.max.bookstore.domain.Categoria;
 import com.max.bookstore.repositories.CategoriaRepository;
-import com.max.bookstore.service.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoriaService {
-
+	
 	@Autowired
 	private CategoriaRepository repository;
 
 	public Categoria findById(Integer id) {
 		Optional<Categoria> obj = repository.findById(id);
-		return obj.orElseThrow(() -> new ObjectNotFoundException(
-				"Objeto não encontrado! Id " + id + ", Tipo: " + Categoria.class.getName()));
+		return obj.orElse(null);
 	}
 }
