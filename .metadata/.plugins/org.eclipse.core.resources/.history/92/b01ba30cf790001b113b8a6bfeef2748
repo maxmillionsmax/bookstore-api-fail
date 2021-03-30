@@ -1,0 +1,5 @@
+package com.max.bookstore.repositories;
+
+public class CategoriaRepository {
+
+}

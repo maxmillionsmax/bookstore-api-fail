@@ -1,17 +1,14 @@
 package com.max.bookstore.domain;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
-public class Categoria implements Serializable{
+public class Livro implements Serializable{
 
 	/**
 	 * 
@@ -21,21 +18,24 @@ public class Categoria implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String nome;
-	private String descricao;
-	@OneToMany(mappedBy = "categoria")
-	private List<Livro> livros = new ArrayList<>();
+	private String titulo;
+	private String nome_autor;
+	private String textoString;
+	
+	private Categoria categoria;
 
-	public Categoria() {
+	public Livro() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Categoria(Integer id, String nome, String descricao) {
+	public Livro(Integer id, String titulo, String nome_autor, String textoString, Categoria categoria) {
 		super();
 		this.id = id;
-		this.nome = nome;
-		this.descricao = descricao;
+		this.titulo = titulo;
+		this.nome_autor = nome_autor;
+		this.textoString = textoString;
+		this.categoria = categoria;
 	}
 
 	public Integer getId() {
@@ -46,28 +46,36 @@ public class Categoria implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getNome_autor() {
+		return nome_autor;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setNome_autor(String nome_autor) {
+		this.nome_autor = nome_autor;
 	}
 
-	public List<Livro> getLivros() {
-		return livros;
+	public String getTextoString() {
+		return textoString;
 	}
 
-	public void setLivros(List<Livro> livros) {
-		this.livros = livros;
+	public void setTextoString(String textoString) {
+		this.textoString = textoString;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	@Override
@@ -86,14 +94,14 @@ public class Categoria implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Categoria other = (Categoria) obj;
+		Livro other = (Livro) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	} 
+	}
 	
 	
 }
