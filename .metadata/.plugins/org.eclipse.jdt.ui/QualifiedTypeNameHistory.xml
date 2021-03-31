@@ -17,9 +17,7 @@
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 <fullyQualifiedTypeName name="curso.springboot.model.Pessoa"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
@@ -36,7 +34,6 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.max.bookstore.repositories.CategoriaRepository"/>
@@ -46,13 +43,18 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="javassist.tools.rmi.ObjectNotFoundException"/>
-<fullyQualifiedTypeName name="com.max.bookstore.domain.Categoria"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
 <fullyQualifiedTypeName name="com.max.bookstore.service.exceptions.ObjectNotFoundException"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletRequest"/>
 <fullyQualifiedTypeName name="com.max.bookstore.resources.exceptions.StandardError"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="com.max.bookstore.domain.Categoria"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.max.bookstore.dtos.CategoriaDTO"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 </qualifiedTypeNameHistroy>
