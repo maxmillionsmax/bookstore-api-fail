@@ -13,6 +13,8 @@
 		<item key="index" value="1"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="size.x" value="524"/>
+		<item key="size.y" value="238"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
